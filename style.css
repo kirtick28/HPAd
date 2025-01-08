@@ -152,8 +152,6 @@ footer {
   overflow: hidden;
   scroll-snap-align: start;
 }
-
-/* Video Slider Container */
 .video-container {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -165,7 +163,6 @@ footer {
   gap: 20px;
 }
 
-/* Updated Video Class */
 .video {
   flex: 0 0 calc(33.333% - 14px);
   scroll-snap-align: start;
@@ -174,7 +171,6 @@ footer {
   position: relative;
 }
 
-/* Make iframe responsive */
 .video iframe {
   width: 100%;
   height: 100%;
@@ -186,11 +182,10 @@ footer {
   bottom: 0;
 }
 
-/* Ensure video aspect ratio (16:9) */
 .video::before {
   content: '';
   display: block;
-  padding-top: 56.25%; /* 16:9 aspect ratio */
+  padding-top: 56.25%;
 }
 
 .slider-container,
